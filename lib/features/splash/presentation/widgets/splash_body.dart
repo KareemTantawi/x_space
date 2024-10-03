@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:x_space/core/styles/images/app_image.dart';
+import 'package:x_space/core/utils/spacing.dart';
+import 'package:x_space/features/splash/presentation/widgets/slider_widget.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
@@ -35,6 +39,32 @@ class _SplashBodyState extends State<SplashBody>
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return SafeArea(
+      child: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        // crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const Spacer(
+            flex: 2,
+          ),
+          Center(
+            child: Image.asset(
+              AppImages.splash,
+              height: 220.h,
+            ),
+          ),
+          // verticalSpace(80),
+          const Spacer(
+            flex: 4,
+          ),
+          SliderWidget(
+            animate: animate,
+          ),
+          const Spacer(
+            flex: 1,
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:x_space/core/styles/images/app_image.dart';
 
-class sliderWidget extends StatelessWidget {
-  const sliderWidget({super.key, required this.animate});
+class SliderWidget extends StatelessWidget {
+  const SliderWidget({super.key, required this.animate});
   final Animation<Offset> animate;
   @override
   Widget build(BuildContext context) {
@@ -10,10 +12,9 @@ class sliderWidget extends StatelessWidget {
       builder: (context, _) {
         return SlideTransition(
           position: animate,
-          child: const Text(
-            'Lets Start !',
-            style: TextStyle(color: Colors.white),
-            textAlign: TextAlign.center,
+          child: Image.asset(
+            AppImages.imageSplash,
+            height: 60.h,
           ),
         );
       },
