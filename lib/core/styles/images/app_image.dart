@@ -1,12 +1,10 @@
 class AppImages {
-  static const String logoImage = 'assets/images/logo.png';
-  static const String googleIcon = 'assets/icons/Google Icon.png';
-  static const String appleIcon = 'assets/icons/Apple icon.png';
-  static const String arrowIcon = 'assets/icons/arrow-left-icon.png';
-  static const String createProfileIcon =
-      'assets/images/create_profile_logo.svg';
-  static const String createProfileIcon2 =
-      'assets/images/create_profile_logo.svg';
-  static const String carrierAdminLogo = 'assets/logo/Logo CarrierAdmin1.png';
-  static const String loginImage = 'assets/images/login_image (2).jpeg';
+  static const String imageSplash = 'assets/images/image_splash.png';
+  static const String splash = 'assets/images/splash.jpg';
+  static const String jupetar = 'assets/images/jupetar.png';
+  static const String mars = 'assets/images/mars.png';
+  static const String mercury = 'assets/images/mercury.png';
+  static const String moon = 'assets/images/moon.png';
+  static const String saturn = 'assets/images/saturn.png';
+  static const String uranus = 'assets/images/uranus.png';
 }
