@@ -7,4 +7,5 @@ class AppImages {
   static const String moon = 'assets/images/moon.png';
   static const String saturn = 'assets/images/saturn.png';
   static const String uranus = 'assets/images/uranus.png';
+  static const String homeImage = 'assets/images/home_image.png';
 }
