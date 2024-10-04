@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:x_space/core/routes/routes.dart';
 import 'package:x_space/core/styles/images/app_image.dart';
-import 'package:x_space/core/utils/spacing.dart';
 import 'package:x_space/features/splash/presentation/widgets/slider_widget.dart';
 
 class SplashBody extends StatefulWidget {
@@ -26,7 +26,7 @@ class _SplashBodyState extends State<SplashBody>
     controller.forward();
 
     Future.delayed(const Duration(seconds: 2), () {
-      // Navigator.pushNamed(context, Routes.onBoardingScreen);
+      Navigator.pushNamed(context, Routes.bottomNavBarScreen);
     });
   }
 
@@ -41,8 +41,6 @@ class _SplashBodyState extends State<SplashBody>
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Spacer(
             flex: 2,
